@@ -1,9 +1,9 @@
 
 package natket;
 
-public class Manager extends javax.swing.JFrame {
+public class Marketing extends javax.swing.JFrame {
     
-    public Manager() {
+    public Marketing() {
         initComponents();
     }
 
@@ -13,11 +13,11 @@ public class Manager extends javax.swing.JFrame {
     private void initComponents() {
 
         back = new javax.swing.JLabel();
-        transactions = new javax.swing.JLabel();
-        customers = new javax.swing.JLabel();
-        employees = new javax.swing.JLabel();
-        sales = new javax.swing.JLabel();
-        manager = new javax.swing.JLabel();
+        catalogs = new javax.swing.JLabel();
+        insprod = new javax.swing.JLabel();
+        inscatalog = new javax.swing.JLabel();
+        products = new javax.swing.JLabel();
+        marketing = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -30,57 +30,57 @@ public class Manager extends javax.swing.JFrame {
         });
         getContentPane().add(back, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 490, 60, 30));
 
-        transactions.addMouseListener(new java.awt.event.MouseAdapter() {
+        catalogs.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                transactionsMouseClicked(evt);
+                catalogsMouseClicked(evt);
             }
         });
-        getContentPane().add(transactions, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 300, 160, 140));
+        getContentPane().add(catalogs, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 300, 160, 140));
 
-        customers.addMouseListener(new java.awt.event.MouseAdapter() {
+        insprod.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                customersMouseClicked(evt);
+                insprodMouseClicked(evt);
             }
         });
-        getContentPane().add(customers, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 110, 170, 140));
+        getContentPane().add(insprod, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 110, 170, 140));
 
-        employees.addMouseListener(new java.awt.event.MouseAdapter() {
+        inscatalog.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                employeesMouseClicked(evt);
+                inscatalogMouseClicked(evt);
             }
         });
-        getContentPane().add(employees, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 110, 160, 140));
+        getContentPane().add(inscatalog, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 110, 160, 140));
 
-        sales.addMouseListener(new java.awt.event.MouseAdapter() {
+        products.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                salesMouseClicked(evt);
+                productsMouseClicked(evt);
             }
         });
-        getContentPane().add(sales, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 300, 170, 140));
+        getContentPane().add(products, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 300, 170, 140));
 
-        manager.setIcon(new javax.swing.ImageIcon(getClass().getResource("/natket/Manager.jpg"))); // NOI18N
-        manager.setText(" ");
-        getContentPane().add(manager, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 860, 550));
+        marketing.setIcon(new javax.swing.ImageIcon(getClass().getResource("/natket/Marketing.jpg"))); // NOI18N
+        marketing.setText(" ");
+        getContentPane().add(marketing, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 860, 550));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void transactionsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_transactionsMouseClicked
+    private void catalogsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_catalogsMouseClicked
 
-    }//GEN-LAST:event_transactionsMouseClicked
+    }//GEN-LAST:event_catalogsMouseClicked
 
-    private void customersMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_customersMouseClicked
+    private void insprodMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_insprodMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_customersMouseClicked
+    }//GEN-LAST:event_insprodMouseClicked
 
-    private void employeesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_employeesMouseClicked
+    private void inscatalogMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_inscatalogMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_employeesMouseClicked
+    }//GEN-LAST:event_inscatalogMouseClicked
 
-    private void salesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_salesMouseClicked
+    private void productsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_productsMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_salesMouseClicked
+    }//GEN-LAST:event_productsMouseClicked
 
     private void backMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backMouseClicked
         HomePage a = new HomePage();
@@ -105,14 +105,30 @@ public class Manager extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Manager.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Marketing.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Manager.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Marketing.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Manager.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Marketing.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Manager.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Marketing.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -133,17 +149,17 @@ public class Manager extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Manager().setVisible(true);
+                new Marketing().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel back;
-    private javax.swing.JLabel customers;
-    private javax.swing.JLabel employees;
-    private javax.swing.JLabel manager;
-    private javax.swing.JLabel sales;
-    private javax.swing.JLabel transactions;
+    private javax.swing.JLabel catalogs;
+    private javax.swing.JLabel inscatalog;
+    private javax.swing.JLabel insprod;
+    private javax.swing.JLabel marketing;
+    private javax.swing.JLabel products;
     // End of variables declaration//GEN-END:variables
 }

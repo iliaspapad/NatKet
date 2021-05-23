@@ -11,8 +11,8 @@ import java.sql.ResultSet;
 
 public class LoginPage extends javax.swing.JFrame {
     Connection con;
-    PreparedStatement pst;
-    ResultSet rs;
+    PreparedStatement pst,pst1,pst2;
+    ResultSet rs,rs1,rs2;
     
     public LoginPage() {
         initComponents();
@@ -97,9 +97,29 @@ public class LoginPage extends javax.swing.JFrame {
    
             JOptionPane.showMessageDialog(this,"You have logged in successfully!");
             
-             Manager a = new Manager();
-            a.setVisible(true);
-            this.dispose();
+            
+             String user =rs.getString("username");
+             
+             pst1 = con.prepareStatement("select * from manager where username=? ");
+             pst1.setString(1, user);
+             rs1=pst1.executeQuery();
+             
+             if(rs1.next()){
+                 Manager b = new Manager();
+                b.setVisible(true);
+                this.dispose();
+             }
+             
+             pst2 = con.prepareStatement("select * from marketing where username=? ");
+             pst2.setString(1, user);
+             rs2=pst2.executeQuery();
+             
+             if(rs2.next()){
+                Marketing b = new Marketing();
+                b.setVisible(true);
+                this.dispose();
+             }
+                
             }
            else
            {

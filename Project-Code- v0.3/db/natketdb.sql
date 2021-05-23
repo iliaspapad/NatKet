@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 22, 2021 at 04:50 PM
+-- Generation Time: May 23, 2021 at 01:26 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.0
 
@@ -42,6 +42,24 @@ INSERT INTO `manager` (`username`, `email`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `marketing`
+--
+
+CREATE TABLE `marketing` (
+  `username` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `marketing`
+--
+
+INSERT INTO `marketing` (`username`, `email`) VALUES
+('ntsam', 'ntsam@natket.com');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -59,8 +77,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`username`, `password`, `name`, `surname`, `address`, `city`) VALUES
+('chrispier', '111111', 'Chris', 'Pier', 'Nikolaou 2', 'Patras'),
 ('ipap', '123456', ' Ioannis', ' Papanikolaou', ' Ermou 12', ' Patras'),
-('ntsam', '1999', 'Nikos', 'Tsamos', 'Patreos 289', 'Patra');
+('ntsam', '1999', 'Nikos', 'Tsamos', 'Patreos 289', 'Patra'),
+('PanL', '2345', 'Panos', 'Lybe', 'Ag. Andreou 122', 'Patras');
 
 --
 -- Indexes for dumped tables
@@ -70,6 +90,12 @@ INSERT INTO `users` (`username`, `password`, `name`, `surname`, `address`, `city
 -- Indexes for table `manager`
 --
 ALTER TABLE `manager`
+  ADD PRIMARY KEY (`username`);
+
+--
+-- Indexes for table `marketing`
+--
+ALTER TABLE `marketing`
   ADD PRIMARY KEY (`username`);
 
 --
@@ -87,6 +113,12 @@ ALTER TABLE `users`
 --
 ALTER TABLE `manager`
   ADD CONSTRAINT `manager_user` FOREIGN KEY (`username`) REFERENCES `users` (`username`);
+
+--
+-- Constraints for table `marketing`
+--
+ALTER TABLE `marketing`
+  ADD CONSTRAINT `marketing_ibfk_1` FOREIGN KEY (`username`) REFERENCES `users` (`username`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
