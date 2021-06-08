@@ -67,19 +67,27 @@ public class Manager extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void transactionsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_transactionsMouseClicked
-
+        ManagerTransactions a = new ManagerTransactions();
+        a.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_transactionsMouseClicked
 
     private void customersMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_customersMouseClicked
-        // TODO add your handling code here:
+        ManagerCustomers a = new ManagerCustomers();
+        a.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_customersMouseClicked
 
     private void employeesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_employeesMouseClicked
-        // TODO add your handling code here:
+        ManagerEmployees a = new ManagerEmployees();
+        a.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_employeesMouseClicked
 
     private void salesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_salesMouseClicked
-        // TODO add your handling code here:
+        ManagerSales a = new ManagerSales();
+        a.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_salesMouseClicked
 
     private void backMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backMouseClicked
