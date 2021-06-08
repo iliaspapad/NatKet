@@ -68,18 +68,32 @@ public class Marketing extends javax.swing.JFrame {
 
     private void catalogsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_catalogsMouseClicked
 
+        MarketingCatalogs a = new MarketingCatalogs();
+        a.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_catalogsMouseClicked
 
     private void insprodMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_insprodMouseClicked
-        // TODO add your handling code here:
+        MarketingInsertProducts a = new MarketingInsertProducts();
+        a.setVisible(true);
+        this.dispose();
+                       
+        
+        
     }//GEN-LAST:event_insprodMouseClicked
 
     private void inscatalogMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_inscatalogMouseClicked
-        // TODO add your handling code here:
+       
+         MarketingInsertCatalogs a = new MarketingInsertCatalogs();
+        a.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_inscatalogMouseClicked
 
     private void productsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_productsMouseClicked
-        // TODO add your handling code here:
+        MarketingProducts a = new MarketingProducts();
+        a.setVisible(true);
+        this.dispose();
+        
     }//GEN-LAST:event_productsMouseClicked
 
     private void backMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backMouseClicked
